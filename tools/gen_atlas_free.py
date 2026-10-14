@@ -7,7 +7,9 @@ Cell 48px, 16x12 per page."""
 import os, math, sys
 from PIL import Image, ImageDraw, ImageFont
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-OUT = r"C:\Users\woo31\AppData\Local\Temp\opencode\tos_kr\work\kf_noto"
+# 사용법: py gen_atlas_free.py <글꼴.ttf> <출력폴더>   (예: NanumGothic.ttf, SIL OFL 무료 글꼴)
+FONT = sys.argv[1]
+OUT = sys.argv[2]
 os.makedirs(OUT, exist_ok=True)
 COLS, ROWS, CELL = 16, 12, 48
 PER = COLS * ROWS
@@ -37,7 +39,6 @@ for b0 in range(0xA1, 0xB0):
 missing = [g for g in range(TOTAL) if mp.get(g) is None]
 print("slots with no char (percent):", len(missing), "e.g.", missing[:20])
 
-FONT = r"C:\Users\woo31\AppData\Local\Microsoft\Windows\Fonts\NotoSansKR-Regular.ttf"
 font = ImageFont.truetype(FONT, 40)
 for p in range(NP):
     img = Image.new("RGBA", (COLS * CELL, ROWS * CELL), (255, 255, 255, 0))

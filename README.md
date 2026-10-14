@@ -45,7 +45,7 @@ Steam판 **테일즈 오브 심포니아**(appid `372360`, `TOS.exe`)의 기존 
 - ✅ 최종 조합: 아틀라스 21페이지(3855글리프) + `src/korfnt_kr.c`(logger23 릴리스 빌드)
 - 🧪 **베타 0.1**: 한글패치 1.0 위에 덮어씌우는 추가패치 — [`beta/`](beta/설명서.md), [`docs/C_beta_0.1.md`](docs/C_beta_0.1.md)
   (다른 사람의 번역·로더 파일은 포함하지 않음)
-- ⏳ 베타 배포본(Noto Sans KR 글꼴) 게임 내 최종 확인, 글꼴 그림 변환 스크립트 추가
+- ⏳ 베타 배포본 글꼴(Noto → 나눔고딕 교체 예정) 게임 내 최종 확인, 글꼴 그림 변환 스크립트 추가
 
 자세한 일지/명세: **[`docs/B_spec.md`](docs/B_spec.md)**, 초기 구조 분석: **[`docs/analysis.md`](docs/analysis.md)**
 
