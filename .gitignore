@@ -1,0 +1,42 @@
+# 게임 데이터 / 바이너리 / 산출물 제외
+*.dll
+*.exe
+*.o
+*.obj
+*.bin
+*.raw
+*.dds
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.7z
+*.zip
+*.bak
+*.out
+*.log
+*.txt
+*.json
+
+# 게임 리소스/덤프
+entries/
+kf/
+kf13/
+kf17/
+mag/
+out/
+shots*/
+tp/
+tppal*/
+backup/
+TLFILE.TLDAT*
+FILEHEADER.TOFHDB*
+korfnt*
+
+# IDE / OS
+.vs/
+.vscode/
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini
